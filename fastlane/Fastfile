@@ -21,12 +21,12 @@ platform :android do
     gradle(task: "test")
   end
 
-desc: "for testing fastlane"
-lane :demo do
-  gradle(
-    task: 'assemble',
-    build_type: 'debug'
-  )
+  desc "for testing fastlane"
+  lane :demo do
+    gradle(
+      task: 'assemble',
+      build_type: 'debug'
+    )
   end
 
   desc "Submit a new Beta Build to Crashlytics Beta"
